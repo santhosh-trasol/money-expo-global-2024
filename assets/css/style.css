@@ -52,7 +52,7 @@ a {
     /* background-color: #000C58; */
     color: #fff;
     text-transform: uppercase;
-    min-height: 100vh;
+    min-height: 130vh;
     position: relative;
     overflow: hidden;
     
@@ -66,7 +66,7 @@ a {
     width: 100%;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -40%);
+    transform: translate(-50%, -60%);
     align-items: center;
     /* min-height: 60vh; */
     font-family: "Montserrat", sans-serif;
@@ -127,6 +127,7 @@ a {
 .about-text {
     line-height: 42px;
     font-size: 24px;
+    text-align: justify;
     font-family: "Inter Tight", sans-serif;
 }
 
@@ -135,7 +136,7 @@ a {
     border: 2px solid #fff;
     padding: 15px;
     border-radius: 20px;
-    min-height: 150px;
+    min-height: 170px;
     display: grid;
     place-content: center;
 }
@@ -333,13 +334,14 @@ a {
 }
 
 .view-img-btn {
-    padding: 10px 20px;
+    padding: 14px 40px;
     border-radius: 10px;
     font-weight: 600;
+    font-size: 20px;
     background: #00000080;
     color: #fff;
     text-transform: capitalize;
-    border: 2px solid #9747FF
+    border: 2px solid #9747FF;
 }
 
 .view-img-btn:hover {
@@ -365,11 +367,12 @@ a {
 }
 
 .contact-btns button {
-    width: 90%;
+    width: 85%;
     text-align: center;
-    padding: 10px 20px;
+    padding: 15px 24px;
     border-radius: 10px;
     font-weight: 600;
+    font-size: 20px;
     color: #fff;
     background: transparent;
     text-transform: capitalize;
@@ -525,6 +528,9 @@ a {
     .about-right {
         margin-top: 30px;
     }
+    .about-box-fit {
+        width: 30%;
+    }
 
     /* about-section-end */
     /* number-statics-section-start */
@@ -564,6 +570,12 @@ a {
 
     /* mobile-common-styles-end */
     /* banner-section-start */
+    .banner-section {
+        min-height: 100vh;
+    }
+    .banner-content {
+        transform: translate(-50%, -50%);
+    }
     .banner-fit {
         width: 150px;
     }
@@ -618,6 +630,12 @@ a {
     /* contact-us-section-start */
     .contact-btns {
         margin-bottom: 0px !important;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .contact-btns li {
+        width: 85%;
+        margin: 0 auto 20px;
     }
 
     .contact-table.table td:first-child {
