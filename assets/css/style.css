@@ -353,8 +353,29 @@ a {
 
 /* image-section-end */
 /* all-event-section-start */
+.all-events-section{
+    background: url(../images/all-event-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+.all-events-section:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff7ffde;
+    content: "";
+    z-index: 0;
+}
+.all-events-section .container{
+    z-index: 1;
+    position: relative;
+}
 .all-events-section .main-title {
-    margin-bottom: 50px !important;
+    margin-bottom: 30px !important;
 }
 
 .all-events-section .main-title span {
@@ -366,7 +387,7 @@ a {
     font-weight: 700 !important;
     font-family: "Montserrat", sans-serif !important;
     margin-bottom: 15px !important;
-    background-color: transparent !important;
+    background-color: #fff !important;
     color: #d3137f !important;
     border: 2px solid #d3137f !important;
     font-size: 18px !important;
